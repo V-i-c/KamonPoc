@@ -1,0 +1,12 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+
+<aspectj>
+    <!--<aspects>-->
+        <!--&lt;!&ndash; Notify that AspectJ is present &ndash;&gt;-->
+        <!--<aspect name="kamon.AspectJPresent"/>-->
+    <!--</aspects>-->
+    <weaver options="-Xlint:ignore">
+        <include within="kamon..*"/>
+        <exclude within="org.aspectj.*"/>
+    </weaver>
+</aspectj>
